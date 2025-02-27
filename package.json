@@ -1,0 +1,14 @@
+{
+  "name": "elevate-platform",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "start:frontend": "cd elevate_frontend && npm run dev",
+    "start:backend": "cd elevate_backend && python manage.py runserver",
+    "docker:up": "cd docker && docker compose up -d",
+    "docker:down": "cd docker && docker compose down"
+  }
+}
